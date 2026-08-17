@@ -144,6 +144,34 @@
             background: #FFFDF8;
         }
 
+        .waze-button {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.7rem 1.5rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: background 0.3s, box-shadow 0.3s;
+            cursor: pointer;
+        }
+
+        .waze-button:hover {
+            background: #2d4a68;
+            box-shadow: 0 2px 8px rgba(62, 94, 128, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .waze-button {
+                display: block;
+                text-align: center;
+                padding: 0.8rem 1.2rem;
+                font-size: 0.9rem;
+            }
+        }
+
         @media (max-width: 768px) {
             .hero {
                 padding: 2rem 1.5rem;
@@ -1065,6 +1093,7 @@
                 <p style="margin: 0; font-size: 1rem;"><strong>Full Address:</strong></p>
                 <p style="margin: 0.5rem 0 0 0; font-size: 1.05rem; color: var(--primary);">Lot 1989, 1990, 1991 Kampung Kulim, Wakaf Bharu, 17810 Tumpat, Kelantan, Malaysia</p>
                 <p style="margin: 0.8rem 0 0 0; font-size: 0.9rem; color: var(--text-muted);">GPS: 6°06'32.9"N 102°11'27.4"E</p>
+                <a href="https://waze.com/ul/hw30dv2jhm" target="_blank" class="waze-button">📍 Get Directions (Waze)</a>
             </div>
 
             <div class="grid-2">
