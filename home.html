@@ -76,8 +76,17 @@
         }
 
         @media (max-width: 768px) {
+            nav {
+                padding: 0.8rem 1rem;
+            }
+            nav h1 {
+                display: none;
+            }
             nav ul {
                 display: none;
+            }
+            nav .container {
+                justify-content: center;
             }
         }
 
@@ -136,11 +145,24 @@
         }
 
         @media (max-width: 768px) {
+            .hero {
+                padding: 2rem 1.5rem;
+            }
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.6rem;
+                margin-bottom: 0.4rem;
             }
             .hero .subtitle {
-                font-size: 1rem;
+                font-size: 0.95rem;
+                margin-bottom: 0.8rem;
+            }
+            .hero .location {
+                font-size: 0.85rem;
+                margin-bottom: 1.5rem;
+            }
+            .hero-cta {
+                padding: 0.7rem 1.5rem;
+                font-size: 0.9rem;
             }
         }
 
@@ -175,6 +197,28 @@
             margin-bottom: 1rem;
         }
 
+        @media (max-width: 768px) {
+            section {
+                padding: 2.5rem 1.5rem;
+            }
+            section h2 {
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+            }
+            section h3 {
+                font-size: 1.1rem;
+                margin-top: 1.2rem;
+                margin-bottom: 0.7rem;
+            }
+            section p {
+                font-size: 0.95rem;
+                line-height: 1.6;
+            }
+            .container {
+                padding: 0 1.5rem;
+            }
+        }
+
         /* Grid Layouts */
         .grid-2 {
             display: grid;
@@ -191,8 +235,13 @@
         }
 
         @media (max-width: 768px) {
-            .grid-2, .grid-3 {
+            .grid-2 {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            .grid-3 {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
             }
         }
 
@@ -211,6 +260,24 @@
 
         .card h3 {
             margin-top: 0;
+        }
+
+        .card h4 {
+            font-size: 1rem;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                padding: 1.5rem;
+            }
+            .card h4 {
+                font-size: 0.95rem;
+                margin-top: 0;
+                margin-bottom: 0.6rem;
+            }
+            .card p {
+                font-size: 0.9rem;
+            }
         }
 
         .card-badge {
@@ -320,6 +387,20 @@
             background: #F9F6F0;
         }
 
+        @media (max-width: 768px) {
+            table {
+                font-size: 0.85rem;
+                margin: 1.5rem 0;
+            }
+            table th {
+                padding: 0.8rem 0.5rem;
+                font-size: 0.8rem;
+            }
+            table td {
+                padding: 0.8rem 0.5rem;
+            }
+        }
+
         /* Image Gallery */
         .gallery {
             display: grid;
@@ -364,6 +445,18 @@
 
         @media (max-width: 768px) {
             .gallery {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.8rem;
+                margin: 1.5rem 0;
+            }
+            .gallery-label {
+                padding: 0.6rem;
+                font-size: 0.75rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery {
                 grid-template-columns: 1fr;
             }
         }
@@ -383,6 +476,19 @@
             width: 100%;
             height: 100%;
             border: none;
+        }
+
+        @media (max-width: 768px) {
+            .map-container {
+                height: 350px;
+                margin: 1.5rem 0;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .map-container {
+                height: 300px;
+            }
         }
 
         /* Buyer Personas */
@@ -411,6 +517,25 @@
         .persona-trait strong {
             min-width: 100px;
             color: var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .persona-card {
+                padding: 1.5rem;
+                margin: 1.2rem 0;
+            }
+            .persona-card h3 {
+                font-size: 1.1rem;
+            }
+            .persona-trait {
+                flex-direction: column;
+                gap: 0.3rem;
+                margin: 0.8rem 0;
+                font-size: 0.9rem;
+            }
+            .persona-trait strong {
+                min-width: auto;
+            }
         }
 
         /* Concept Cards */
@@ -533,6 +658,36 @@
         }
 
         @media (max-width: 768px) {
+            .concept-grid-large {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+                margin: 1.5rem 0;
+            }
+            .concept-card-large img {
+                height: 180px;
+            }
+            .concept-card-large-content {
+                padding: 1.2rem;
+            }
+            .concept-card-large-content h4 {
+                font-size: 1rem;
+                margin-bottom: 0.4rem;
+            }
+            .concept-hook {
+                font-size: 0.85rem;
+                margin: 0.6rem 0;
+            }
+            .concept-description {
+                font-size: 0.85rem;
+                margin: 0.6rem 0;
+                line-height: 1.4;
+            }
+            .concept-additions {
+                font-size: 0.8rem;
+            }
+        }
+
+        @media (max-width: 768px) {
             .concept-grid, .concept-grid-large {
                 grid-template-columns: 1fr;
             }
@@ -572,6 +727,14 @@
             color: var(--primary);
         }
 
+        @media (max-width: 768px) {
+            .highlight {
+                padding: 1.2rem;
+                margin: 1.5rem 0;
+                font-size: 0.9rem;
+            }
+        }
+
         /* Warning Box */
         .concept-notice {
             background: #FEF5EB;
@@ -603,6 +766,24 @@
             font-size: 1.1rem;
         }
 
+        @media (max-width: 768px) {
+            .cta-section {
+                padding: 2rem 1.5rem;
+            }
+            .cta-section h2 {
+                font-size: 1.4rem;
+                margin-bottom: 0.8rem;
+            }
+            .cta-section p {
+                font-size: 0.95rem;
+                margin-bottom: 1.5rem;
+            }
+            .cta-section h3 {
+                font-size: 1rem;
+                margin-top: 1.5rem;
+            }
+        }
+
         /* Footer */
         footer {
             background: #FCF3E0;
@@ -611,6 +792,16 @@
             text-align: center;
             font-size: 0.85rem;
             border-top: 1px solid var(--border-color);
+        }
+
+        @media (max-width: 768px) {
+            footer {
+                padding: 1.5rem 1rem;
+                font-size: 0.8rem;
+            }
+            footer p {
+                margin: 0.5rem 0;
+            }
         }
 
         /* Utility Classes */
@@ -700,6 +891,38 @@
         </div>
     </section>
 
+    <!-- Why This Opportunity Is Different -->
+    <section class="alt">
+        <div class="container">
+            <h2>✨ Why This Opportunity Is Different</h2>
+            <p>This is not a typical residential listing. It is a rare assembled estate with structural advantages that most single-title properties cannot offer.</p>
+
+            <div class="grid-3">
+                <div class="card">
+                    <h4>Rare Multi-Title Assembly</h4>
+                    <p>Three adjoining residential titles (approximately 15,512 sqft) provide flexibility that cannot be replicated in single-title properties. The buyer gains multiple ownership options and development scenarios.</p>
+                    <p style="margin-top: 1rem; color: var(--secondary); font-weight: 600;">Competitive advantage: Land assembly at compound scale.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Freehold Component Foundation</h4>
+                    <p>Unlike typical leasehold-only compounds, this estate includes Lot 1990 as a perpetual tenure (freehold) title. This provides a stronger legal and financial foundation for long-term family ownership and generational wealth preservation.</p>
+                    <p style="margin-top: 1rem; color: var(--secondary); font-weight: 600;">Competitive advantage: Tenure diversity and stability.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Immediate Usability + Future Optionality</h4>
+                    <p>The buyer can occupy the existing homes immediately, use as a family gathering place, accommodate multiple generations, or rent out. At the same time, the land allows for gradual estate development without pressure to rebuild immediately.</p>
+                    <p style="margin-top: 1rem; color: var(--secondary); font-weight: 600;">Competitive advantage: Live now, develop later.</p>
+                </div>
+            </div>
+
+            <div class="highlight mt-2">
+                <strong>The Real Value Driver:</strong> The buyer is not buying three houses—they are buying a place where their family story continues. The buildings provide immediate utility. The land provides long-term wealth potential.
+            </div>
+        </div>
+    </section>
+
     <!-- Why Previous Marketing Failed -->
     <section class="alt">
         <div class="container">
@@ -751,42 +974,41 @@
                 <thead>
                     <tr>
                         <th>Lot Number</th>
-                        <th>Area (sqm)</th>
                         <th>Area (sqft)</th>
                         <th>Tenure</th>
-                        <th>Lease Expiry</th>
+                        <th>Term / Expiry</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <td><strong>Lot 1989</strong></td>
-                        <td>451</td>
                         <td>4,855</td>
-                        <td>Leasehold</td>
-                        <td>2068</td>
+                        <td>Leasehold (66 years)</td>
+                        <td>24 Nov 2068 (~42 years)</td>
                     </tr>
                     <tr>
                         <td><strong>Lot 1990</strong></td>
-                        <td>526</td>
                         <td>5,662</td>
-                        <td>Leasehold</td>
-                        <td>Verified separately</td>
+                        <td><span style="background: #E8F5E9; padding: 0.3rem 0.6rem; border-radius: 3px; font-weight: 600; color: #2E7D52;">Freehold (Perpetual)</span></td>
+                        <td>No expiry</td>
                     </tr>
                     <tr>
                         <td><strong>Lot 1991</strong></td>
-                        <td>464</td>
                         <td>4,995</td>
-                        <td>Leasehold</td>
-                        <td>2051</td>
+                        <td>Leasehold (66 years)</td>
+                        <td>3 Feb 2051 (~25 years)</td>
                     </tr>
                     <tr style="background: var(--light-bg); font-weight: 600;">
                         <td><strong>TOTAL</strong></td>
-                        <td><strong>1,441</strong></td>
-                        <td><strong>15,512</strong></td>
-                        <td colspan="2"><strong>Mixed leasehold, 25-42 years remaining</strong></td>
+                        <td><strong>15,512 sqft</strong></td>
+                        <td colspan="2"><strong>Unique tenure mix: 1 Freehold + 2 Long-term Leasehold</strong></td>
                     </tr>
                 </tbody>
             </table>
+
+            <div class="highlight" style="margin-top: 2rem;">
+                <strong>Tenure Advantage:</strong> Unlike typical leasehold-only compounds, this estate includes a perpetual tenure title (Lot 1990), providing a stronger foundation for long-term family ownership. The combination of freehold and long-term leasehold (extending to 2051 and 2068) creates a diversified and flexible ownership structure.
+            </div>
 
             <h3 style="margin-top: 2rem;">Location & Administrative Details</h3>
             <div style="background: var(--light-bg); padding: 2rem; border-radius: 4px; margin: 1.5rem 0;">
@@ -1233,12 +1455,18 @@
 
                 <h3 style="margin-top: 2rem; color: var(--primary);">Price Justification</h3>
                 <ul style="margin-left: 1.5rem; color: var(--text-muted);">
-                    <li><strong>Price per sqft:</strong> RM58-61 (excellent value for assembled 15,500 sqft compound)</li>
-                    <li><strong>Land size premium:</strong> 6-10x larger than standard kampung houses</li>
-                    <li><strong>Three-title flexibility:</strong> Unique value not available in single-title properties</li>
-                    <li><strong>Immediate utility:</strong> Three functional houses + multi-purpose hall available now</li>
-                    <li><strong>Strategic positioning:</strong> Signals "serious opportunity," not "distressed property"</li>
+                    <li><strong>Price per sqft:</strong> RM61/sqft for assembled 15,512 sqft compound (comparable to land-only parcels at RM70-85/sqft)</li>
+                    <li><strong>Land configuration value:</strong> Three-title assembly creates unique flexibility unavailable in single-title properties</li>
+                    <li><strong>Freehold component:</strong> Perpetual tenure (Lot 1990) strengthens the asset and supports long-term family ownership</li>
+                    <li><strong>Immediate utility:</strong> Three functional houses + multi-purpose hall reduce buyer's entry friction and renovation pressure</li>
+                    <li><strong>Mixed tenure advantage:</strong> Diversified ownership structure (1 freehold + 2 long-term leasehold to 2051/2068) is actually a strength</li>
+                    <li><strong>Strategic positioning:</strong> Price reflects "assembled family legacy estate," not "three old houses" or distressed sale</li>
                 </ul>
+
+                <div style="background: #F9F6F0; padding: 1.5rem; border-radius: 4px; margin-top: 1.5rem;">
+                    <p><strong style="color: var(--primary);">The Value Is Driven Primarily By Land Configuration and Rarity, Not The Age of Buildings.</strong></p>
+                    <p style="margin: 0.8rem 0 0 0; color: var(--text-muted);">Buyers of family estates understand that land appreciates, buildings age. This property is priced as assembled land with existing utility, not as three houses requiring replacement.</p>
+                </div>
 
                 <h3 style="margin-top: 2rem; color: var(--primary);">Expected Negotiation Range</h3>
                 <div style="background: white; padding: 1.5rem; border-left: 4px solid var(--success); border-radius: 0 4px 4px 0; margin-top: 1rem;">
@@ -1258,6 +1486,45 @@
 
             <div class="highlight">
                 <strong>Key Strategy:</strong> Sell as bundled compound (all 3 titles together). Bundling preserves premium positioning. Individual sales would invite comparisons with single-title kampung houses and downward price pressure.
+            </div>
+        </div>
+    </section>
+
+    <!-- Common Buyer Questions -->
+    <section class="alt">
+        <div class="container">
+            <h2>❓ Common Buyer Questions & Answers</h2>
+            <p>Addressing the concerns buyers typically raise about this type of opportunity:</p>
+
+            <div style="display: grid; gap: 2rem; margin: 2rem 0;">
+                <div class="card">
+                    <h4>Are the houses old? Won't I need to renovate?</h4>
+                    <p><strong>Answer:</strong> The buildings provide immediate functionality and shelter. The true value proposition is the assembled land and compound structure, not the buildings themselves. Many buyers recognize that land in this location, at this scale, is the appreciating asset. The buildings are usable today; the land compounds in value over decades.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Why should I buy three titles instead of a single developed property?</h4>
+                    <p><strong>Answer:</strong> The three-title configuration creates flexibility that normal single-title properties cannot offer. You can separate ownership for different family members, pursue multiple development concepts (family compound, estate, revenue-generating venue), or simply retain maximum optionality. This is strategic land banking, not just property purchase.</p>
+                </div>
+
+                <div class="card">
+                    <h4>What about lease expiry on Lot 1991 (2051) and Lot 1989 (2068)?</h4>
+                    <p><strong>Answer:</strong> The compound includes both perpetual tenure (Lot 1990 – freehold, no expiry) and long-term leasehold titles (extending 25-42 years). This diversified tenure profile is actually a strength. Long-term leasehold land in Malay Reserve areas typically appreciates regardless of lease term, and the 2051/2068 expiry dates are 25+ years away, suitable for most buyer horizons. The freehold component provides additional security.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Is this a good investment if I'm not planning to develop it?</h4>
+                    <p><strong>Answer:</strong> Yes. The property works on multiple levels: as immediate family accommodation, as a balik kampung headquarters, as a holding for future family use, or as strategic land banking in a growing peri-urban area. Even without active development, land in Wakaf Bharu has consistently appreciated. The existing buildings generate rental income if desired.</p>
+                </div>
+
+                <div class="card">
+                    <h4>Why is the price RM950,000 when houses nearby might be cheaper?</h4>
+                    <p><strong>Answer:</strong> This is not a price comparison with individual houses. This is assembled land with compound potential. At approximately RM61/sqft for 15,512 sqft of organized family estate with existing structures, utilities, and freehold component, this represents strong value. Comparable assembled land parcels in peri-urban Kelantan fetch RM70-85/sqft. The price anchors this as a strategic opportunity, not a distressed sale.</p>
+                </div>
+            </div>
+
+            <div class="highlight">
+                <strong>Key Frame:</strong> The buyer is not purchasing "three old kampung houses." The buyer is acquiring a rare assembled family estate with mixed tenure, existing utility, and flexible potential—positioned for legacy, income, or family use depending on vision and timeline.
             </div>
         </div>
     </section>
