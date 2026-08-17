@@ -461,8 +461,79 @@
             margin: 0;
         }
 
+        .concept-grid-large {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .concept-card-large {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: border-color 0.3s, box-shadow 0.3s;
+        }
+
+        .concept-card-large:hover {
+            border-color: var(--accent);
+            box-shadow: 0 4px 12px rgba(62, 94, 128, 0.1);
+        }
+
+        .concept-card-large img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .concept-card-large-content {
+            padding: 1.5rem;
+        }
+
+        .concept-card-large-content h4 {
+            margin: 0 0 0.5rem 0;
+            font-size: 1.15rem;
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        .concept-hook {
+            font-size: 0.95rem;
+            font-style: italic;
+            color: var(--secondary);
+            margin: 0.8rem 0;
+            font-weight: 500;
+        }
+
+        .concept-description {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0.8rem 0;
+            line-height: 1.5;
+        }
+
+        .concept-additions {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin: 1rem 0 0 0;
+        }
+
+        .concept-additions li {
+            margin: 0.3rem 0;
+            padding-left: 1.2rem;
+            position: relative;
+        }
+
+        .concept-additions li:before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
         @media (max-width: 768px) {
-            .concept-grid {
+            .concept-grid, .concept-grid-large {
                 grid-template-columns: 1fr;
             }
         }
@@ -949,44 +1020,196 @@
     <!-- Future Possibility Concepts -->
     <section>
         <div class="container">
-            <h2>Future Possibility Concepts</h2>
+            <h2>🎯 Future Possibility Concepts</h2>
 
             <div class="concept-notice">
                 <strong>⚠️ Conceptual Visualisations Only</strong><br>
-                The following concepts are designed to help buyers imagine possibilities. These are NOT guaranteed development plans. Any redevelopment or alternative use would require feasibility studies, local authority approvals, and relevant approvals. None of these should be presented as current capabilities.
+                The following concepts are designed to help buyers imagine possibilities. None of these are guaranteed development plans. Any redevelopment or alternative use would require feasibility studies, local authority approvals, and specialist advice. The buyer does not need to decide everything on day one—the compound can begin as a family base, then gradually evolve based on vision and market opportunity.
             </div>
 
-            <p>This 15,500 sqft compound configuration enables multiple scenarios depending on buyer vision and timeline:</p>
+            <p style="font-size: 1.05rem; margin: 2rem 0; color: var(--text-dark);"><strong>This 15,500 sqft compound is a flexible platform.</strong> The existing structures provide immediate utility. The land allows for multiple futures depending on buyer vision, family needs, and timeline.</p>
 
-            <div class="concept-grid">
-                <div class="concept-card">
-                    <img src="https://images.pexels.com/photos/31674740/pexels-photo-31674740.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Keluarga Legacy Compound" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div class="concept-card-content">
-                        <h4>Keluarga Legacy Compound</h4>
-                        <p>Multi-generation family living with each generation in their own house on the same compound. Maintain family bonds while preserving independence.</p>
+            <div class="concept-grid-large">
+                <!-- Concept 1 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c1869cc95c7436f69a0f498e1297780b6690804.jpg" alt="Family Kampung Headquarters">
+                    <div class="concept-card-large-content">
+                        <h4>1. The Family Kampung Headquarters</h4>
+                        <div class="concept-hook">"Not a holiday home. Your family's permanent address in Kelantan."</div>
+                        <div class="concept-description">Create a permanent Kelantan base for parents, children, siblings, and extended relatives living in KL, Selangor, Johor, Singapore, or overseas. The three houses provide separate spaces for different generations, while the multi-purpose hall becomes the family's kenduri, Ramadan berbuka, Aidilfitri, wedding, reunion, and community gathering venue.</div>
+                        <ul class="concept-additions">
+                            <li>Separate family zones for parents, main family, and visiting relatives</li>
+                            <li>Large outdoor dining court for gatherings</li>
+                            <li>Prayer room and family archive displaying photographs</li>
+                            <li>Guest rooms for balik kampung periods</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="concept-card">
-                    <img src="https://images.pexels.com/photos/38078936/pexels-photo-38078936.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Modern Kampung Residence" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div class="concept-card-content">
-                        <h4>Modern Kampung Residence</h4>
-                        <p>Rebuild into a contemporary single-family home while maintaining the kampung character and neighborhood aesthetic.</p>
+                <!-- Concept 2 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6ef2fb1cc0534c252990a6b139ef3c0737201a4e.jpg" alt="Durian and Fruit Estate">
+                    <div class="concept-card-large-content">
+                        <h4>2. The Durian & Fruit Estate</h4>
+                        <div class="concept-hook">"Your own orchard in Kelantan—planted for your children and grandchildren."</div>
+                        <div class="concept-description">Create a curated productive estate with durian, rambutan, mangosteen, dokong, langsat, coconut, banana, and lime trees. The existing homes become caretaker quarters, family accommodation, and guest facilities. A familiar wealth symbol with legacy appeal that generates seasonal income.</div>
+                        <ul class="concept-additions">
+                            <li>Premium durian trees with named family rows</li>
+                            <li>Weekend fruit-tasting pavilion</li>
+                            <li>Online pre-ordering for seasonal harvests</li>
+                            <li>Branded hampers for friends and business contacts</li>
+                            <li>A heritage tree planted for each child or grandchild</li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="concept-card">
-                    <img src="https://images.pexels.com/photos/38643700/pexels-photo-38643700.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Private Family Retreat" style="width: 100%; height: 200px; object-fit: cover;">
-                    <div class="concept-card-content">
-                        <h4>Private Family Retreat</h4>
-                        <p>Transform into a weekend/holiday retreat with guest accommodation, event space, and family gathering areas.</p>
+                <!-- Concept 3 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/aea8aac644c02b6550a6e870d03de7c4b447c826.jpg" alt="Private Kenduri and Wedding Compound">
+                    <div class="concept-card-large-content">
+                        <h4>3. The Private Kenduri & Wedding Compound</h4>
+                        <div class="concept-hook">"Your family's own place for the moments that matter."</div>
+                        <div class="concept-description">Reimagine the existing hall and outdoor areas as an intimate venue for nikah ceremonies, family weddings, aqiqah, engagement events, corporate retreats, and private celebrations. The three houses provide preparation rooms, family accommodation, and VIP lodging. Subject to approvals and operational feasibility.</div>
+                        <ul class="concept-additions">
+                            <li>Open-air pelamin platform with tropical garden aisle</li>
+                            <li>Covered dining terrace and private preparation rooms</li>
+                            <li>Traditional Kelantan design details</li>
+                            <li>Rain-safe event layout with flexible indoor/outdoor space</li>
+                            <li>Family-only event packages and weekend booking model</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 4 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4635b3f3c7319976d5e85d30acc81d0fe6c13191.jpg" alt="Ramadan and Raya Family Village">
+                    <div class="concept-card-large-content">
+                        <h4>4. The Ramadan & Raya Family Village</h4>
+                        <div class="concept-hook">"Every Raya, the whole family knows where to gather."</div>
+                        <div class="concept-description">Create a seasonal gathering place for Ramadan berbuka, tahlil, solat Aidilfitri, family photography, children's games, and extended-family hosting. A highly emotional concept for Malay families seeking a permanent reunion destination. Existing multiple residences and hall are perfectly suited.</div>
+                        <ul class="concept-additions">
+                            <li>Outdoor berbuka dining pavilion with large shared kitchen</li>
+                            <li>Open lawn for children's activities and games</li>
+                            <li>Covered prayer and gathering space</li>
+                            <li>Guest rooms for extended family visits</li>
+                            <li>Family photo wall and heritage display area</li>
+                            <li>Traditional kuih-making and cooking facilities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 5 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d1aab815144ba1b995647ab52ef95221c7f2cd7f.jpg" alt="Kelantan Heritage Retreat">
+                    <div class="concept-card-large-content">
+                        <h4>5. The Kelantan Heritage Retreat</h4>
+                        <div class="concept-hook">"Modern comfort, but unmistakably ours."</div>
+                        <div class="concept-description">Combine a private residence with a cultural retreat that showcases Kelantan identity through materials, landscaping, food, and craft. Appeal to buyers who want status through taste and cultural confidence, not through a large modern mansion. Express Kelantan through authentic hospitality and design.</div>
+                        <ul class="concept-additions">
+                            <li>Timber verandas and traditional roof forms</li>
+                            <li>Batik and songket interiors with traditional craftsmanship</li>
+                            <li>Kelantanese culinary garden with local herbs and vegetables</li>
+                            <li>Wayang kulit or rebana-inspired design details</li>
+                            <li>Craft workshop and courtyard for family performances</li>
+                            <li>Small library of Kelantan history and heritage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 6 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4ae09cd0b2bde1a0badc1706b25e49d90879ce39.jpg" alt="Agro-Lifestyle Estate">
+                    <div class="concept-card-large-content">
+                        <h4>6. The Productive Agro-Lifestyle Estate</h4>
+                        <div class="concept-hook">"Come home to a productive kampung, not an empty weekend house."</div>
+                        <div class="concept-description">Create a beautiful, organized productive private estate combining fruit trees, herbs, vegetables, chickens, freshwater fish, beehives, and shaded gathering areas. Appeal to buyers who want a healthier, slower, more authentic lifestyle without abandoning urban income. Show it as beautiful and organized, not as a farm.</div>
+                        <ul class="concept-additions">
+                            <li>Coconut and banana grove with vegetable beds</li>
+                            <li>Herb garden for budu, ulam, and traditional cooking</li>
+                            <li>Small fish pond and attractively designed chicken coop</li>
+                            <li>Composting and rainwater collection systems</li>
+                            <li>Outdoor kitchen and hammock/reading zones</li>
+                            <li>Family harvest weekends and seasonal activities</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 7 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/5e1db303ba1eb3a633721c65a0ff75e528509918.jpg" alt="Private Retreat and Homestay">
+                    <div class="concept-card-large-content">
+                        <h4>7. The Private Retreat & Homestay Cluster</h4>
+                        <div class="concept-hook">"A private resort that belongs to your family."</div>
+                        <div class="concept-description">Lightly upgrade the three houses into a small, private retreat for family and selected guests. Serve as a weekend escape, family accommodation, wellness location, or intimate small-scale homestay, subject to local regulations. More believable than a large resort—still intimate and family-scaled.</div>
+                        <ul class="concept-additions">
+                            <li>Individual themed guest houses with private entrances</li>
+                            <li>Plunge pool or natural swimming area</li>
+                            <li>Outdoor breakfast pavilion and firepit seating</li>
+                            <li>Tropical landscaping and cycling itineraries</li>
+                            <li>Quiet work-from-kampung rooms for digital nomads</li>
+                            <li>Booking reserved to trusted guests or private groups only</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 8 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/2ba43e49eec79241edeb0218e7eca343090b1968.jpg" alt="Family Food Brand Estate">
+                    <div class="concept-card-large-content">
+                        <h4>8. The Family Food & Agriculture Brand</h4>
+                        <div class="concept-hook">"Start with land, then build something the family can sell."</div>
+                        <div class="concept-description">Use the property as the physical home of a family food or agricultural brand. Possible directions include durian products, budu, serunding, dodol, coconut products, traditional snacks, herbs, or premium Raya hampers. Attract entrepreneurial buyers who see property as a business platform for generational wealth.</div>
+                        <ul class="concept-additions">
+                            <li>Small certified production kitchen for food processing</li>
+                            <li>Product photography garden and branding area</li>
+                            <li>Packing and dispatch room with secure storage</li>
+                            <li>Family recipe archive and product documentation</li>
+                            <li>Visitor tasting area and online order fulfilment</li>
+                            <li>Seasonal gift boxes and brand connected to Kampung Kulim</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 9 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/77c3f8e5c9a2d1f4e6b7a8c9d0e1f2a3.jpg" alt="Quiet Wealth Compound">
+                    <div class="concept-card-large-content">
+                        <h4>9. The Quiet Wealth Compound</h4>
+                        <div class="concept-hook">"Real wealth is having space, privacy, family, and options."</div>
+                        <div class="concept-description">Frame the property as a discreet, productive, multi-generational compound with several houses, a hall, fruit trees, private gatherings, and income possibilities. Appeal to aspirational buyers who want privacy and status without a flashy mansion. Avoid making buyers feel they must spend millions on construction first.</div>
+                        <ul class="concept-additions">
+                            <li>Gated entrance with landscaped internal road</li>
+                            <li>Mature tree canopy providing privacy and cooling</li>
+                            <li>Private pool or family bathing area</li>
+                            <li>Outdoor kitchen and staff/caretaker accommodation</li>
+                            <li>Secure storage with separate guest arrival zone</li>
+                            <li>Estate branding and professional signage</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Concept 10 -->
+                <div class="concept-card-large">
+                    <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/74c22e1405d9a325d779c9a9d8528bd4d17b4e29.jpg" alt="Bird's Nest and Family Estate">
+                    <div class="concept-card-large-content">
+                        <h4>10. The Bird's Nest & Family Estate Combination</h4>
+                        <div class="concept-hook">"Let part of the estate generate income while the family enjoys the rest."</div>
+                        <div class="concept-description">A mixed-use family estate where one carefully designed building is reserved for a managed bird's nest operation, while the rest remains a private family compound. Subject to planning, licensing, specialist advice, and neighbour considerations. Do not promise returns—present as optional income layer requiring feasibility studies.</div>
+                        <ul class="concept-additions">
+                            <li>Separate bird's nest structure away from residences</li>
+                            <li>Professional operator under a management agreement</li>
+                            <li>No conversion of main family houses required</li>
+                            <li>Orchard and landscaping buffer between uses</li>
+                            <li>Clear compliance and neighbour-management plan</li>
+                            <li>Requires specialist advice and regulatory approvals</li>
+                        </ul>
                     </div>
                 </div>
             </div>
 
-            <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-top: 2rem;">
-                <em>Other concepts exist depending on buyer interests and local authority approvals. The land's flexibility is its greatest asset.</em>
-            </p>
+            <div class="highlight" style="margin-top: 3rem;">
+                <strong>Key Strategy:</strong> The buyer does not need to decide everything on day one. The compound can begin as a family base, then gradually become an orchard, retreat, event venue, productive estate, food brand, or family enterprise as the owner's vision develops. This flexibility is the property's greatest competitive advantage.
+            </div>
         </div>
     </section>
 
