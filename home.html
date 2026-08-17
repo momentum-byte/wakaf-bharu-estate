@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keluarga Legacy Estate – Wakaf Bharu Opportunity Brief</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #3E5E80;
+            --secondary: #B87710;
+            --accent: #B87710;
+            --light-bg: #EFEBE2;
+            --text-dark: #231F18;
+            --text-muted: #7A7264;
+            --border-color: #E7E0D2;
+            --success: #2E7D52;
+            --card-bg: #FFFDF8;
+            --card-cream: #FCF3E0;
+            --red-accent: #C2452F;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: #ffffff;
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--card-bg);
+            color: var(--text-dark);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        nav .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            letter-spacing: 0;
+            color: var(--primary);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: #EFEBE2;
+            color: var(--text-dark);
+            padding: 3rem 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            letter-spacing: 0;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 400;
+            opacity: 0.95;
+        }
+
+        .hero .location {
+            font-size: 1rem;
+            opacity: 0.9;
+            margin-bottom: 2rem;
+            letter-spacing: 0.5px;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: white;
+            color: var(--primary);
+            padding: 0.8rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 0.95rem;
+            transition: all 0.3s;
+            cursor: pointer;
+            border: 1px solid white;
+        }
+
+        .hero-cta:hover {
+            background: #FFFDF8;
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .hero .subtitle {
+                font-size: 1rem;
+            }
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+        }
+
+        section.alt {
+            background: var(--light-bg);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+            font-weight: 700;
+        }
+
+        section h3 {
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            color: var(--secondary);
+            font-weight: 600;
+        }
+
+        section p {
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            margin-bottom: 1rem;
+        }
+
+        /* Grid Layouts */
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Cards */
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            padding: 2rem;
+            transition: border-color 0.3s;
+        }
+
+        .card:hover {
+            border-color: var(--accent);
+        }
+
+        .card h3 {
+            margin-top: 0;
+        }
+
+        .card-badge {
+            display: inline-block;
+            background: var(--success);
+            color: white;
+            padding: 0.4rem 0.8rem;
+            border-radius: 3px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .card-badge.concept {
+            background: #FCF3E0;
+            color: #8B5E1A;
+        }
+
+        /* Comparison */
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .comparison-box {
+            padding: 2rem;
+            border-radius: 4px;
+        }
+
+        .comparison-box.old {
+            background: #FAF4F0;
+            border: 1px solid #E7CEC3;
+        }
+
+        .comparison-box.new {
+            background: #F1F8F4;
+            border: 1px solid #D4E6DD;
+        }
+
+        .comparison-box h4 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+
+        .comparison-box ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .comparison-box li {
+            padding: 0.5rem 0;
+            padding-left: 1.5rem;
+            position: relative;
+            color: var(--text-muted);
+        }
+
+        .comparison-box.old li:before {
+            content: "✕";
+            position: absolute;
+            left: 0;
+            color: #c9745f;
+            font-weight: bold;
+        }
+
+        .comparison-box.new li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: var(--success);
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .comparison {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Table Styles */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+
+        table th {
+            background: var(--primary);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            border: none;
+        }
+
+        table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        table tr:hover {
+            background: #F9F6F0;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+            aspect-ratio: 1;
+            background: #F5F0E8;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover img {
+            opacity: 0.95;
+        }
+
+        .gallery-label {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: rgba(0,0,0,0.7);
+            color: white;
+            padding: 0.8rem;
+            font-size: 0.85rem;
+            font-weight: 500;
+        }
+
+        @media (max-width: 768px) {
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Map */
+        .map-container {
+            position: relative;
+            width: 100%;
+            height: 500px;
+            border-radius: 4px;
+            overflow: hidden;
+            margin: 2rem 0;
+            border: 1px solid var(--border-color);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Buyer Personas */
+        .persona-card {
+            background: white;
+            border-left: 4px solid var(--accent);
+            padding: 2rem;
+            margin: 1.5rem 0;
+            border-radius: 0 4px 4px 0;
+            border: 1px solid var(--border-color);
+            border-left: 4px solid var(--accent);
+        }
+
+        .persona-card h3 {
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .persona-trait {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        .persona-trait strong {
+            min-width: 100px;
+            color: var(--secondary);
+        }
+
+        /* Concept Cards */
+        .concept-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin: 2rem 0;
+        }
+
+        .concept-card {
+            background: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow: hidden;
+            transition: border-color 0.3s;
+        }
+
+        .concept-card:hover {
+            border-color: var(--accent);
+        }
+
+        .concept-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, #f0f0f0 0%, #e8e8e8 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #999;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        .concept-card-content {
+            padding: 1.5rem;
+        }
+
+        .concept-card-content h4 {
+            margin: 0 0 0.8rem 0;
+            font-size: 1.1rem;
+            color: var(--primary);
+        }
+
+        .concept-card-content p {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .concept-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Pricing Section */
+        .pricing-box {
+            background: #F9F6F0;
+            padding: 2rem;
+            border-radius: 4px;
+            border-left: 4px solid var(--accent);
+            margin: 2rem 0;
+        }
+
+        .price-display {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin: 1rem 0;
+        }
+
+        .price-unit {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        /* Highlight Box */
+        .highlight {
+            background: #F5F0E8;
+            border-left: 4px solid var(--accent);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .highlight strong {
+            color: var(--primary);
+        }
+
+        /* Warning Box */
+        .concept-notice {
+            background: #FEF5EB;
+            border-left: 4px solid var(--secondary);
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 0 4px 4px 0;
+            font-size: 0.95rem;
+            color: #8B5E1A;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: #FFFDF8;
+            color: var(--text-dark);
+            text-align: center;
+            padding: 3rem 2rem;
+            border-top: 2px solid var(--accent);
+        }
+
+        .cta-section h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            color: var(--text-muted);
+            margin-bottom: 2rem;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #FCF3E0;
+            color: var(--text-muted);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+        }
+
+        /* Utility Classes */
+        .text-muted {
+            color: var(--text-muted);
+        }
+
+        .text-accent {
+            color: var(--accent);
+        }
+
+        .mt-2 { margin-top: 2rem; }
+        .mb-2 { margin-bottom: 2rem; }
+
+        /* Print Styles */
+        @media print {
+            nav, .hero-cta {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Internal Document Label -->
+    <div style="background: #FCF3E0; color: #231F18; padding: 1rem 2rem; text-align: center; font-weight: 600; border-bottom: 2px solid #B87710;">
+        INTERNAL DISCUSSION DOCUMENT<br>
+        <span style="font-size: 0.9rem; font-weight: 400; color: #7A7264;">Prepared for strategic discussion with real estate partners. Not for public advertising.</span>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="container">
+            <h1>Keluarga Legacy Estate</h1>
+            <ul>
+                <li><a href="#opportunity">Opportunity</a></li>
+                <li><a href="#facts">Property Facts</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#buyers">Ideal Buyers</a></li>
+                <li><a href="#pricing">Pricing</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Keluarga Legacy Estate</h1>
+        <p class="subtitle">Rare Multi-Title Family Compound Opportunity</p>
+        <p class="location">Kampung Kulim, Wakaf Bharu, Tumpat, Kelantan, Malaysia</p>
+        <p style="font-size: 1rem; font-weight: 300; opacity: 0.95; max-width: 700px; margin: 1.5rem auto;">
+            Not simply a house sale. A rare opportunity to secure a large family compound with multiple titles, existing structures, and flexible development potential.
+        </p>
+        <button class="hero-cta" onclick="document.getElementById('buyers').scrollIntoView({behavior: 'smooth'});">Explore Opportunity</button>
+    </section>
+
+    <!-- The Opportunity -->
+    <section id="opportunity">
+        <div class="container">
+            <h2>The Opportunity</h2>
+            <p>This property represents a rare asset configuration in the Wakaf Bharu market. What was previously marketed as "3 old houses" is actually a strategic family compound opportunity that appeals to a specific, high-value buyer profile.</p>
+
+            <div class="grid-2">
+                <div>
+                    <h3>Land Assembly Value</h3>
+                    <p>Approximately 15,500 sqft of assembled land across three separate titles creates flexibility and options that single-title properties cannot offer. This configuration is ideal for:</p>
+                    <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                        <li>Multi-generation family living</li>
+                        <li>Future redevelopment scenarios</li>
+                        <li>Long-term land investment holding</li>
+                        <li>Flexible use and ownership options</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Immediate Usability</h3>
+                    <p>Three ready-to-occupy residential houses and one multi-purpose hall mean this compound can be utilized immediately, while the underlying opportunity (the land) appreciates over time.</p>
+                    <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                        <li>Live in now, develop later</li>
+                        <li>Rent out to generate income</li>
+                        <li>Hold as family legacy asset</li>
+                        <li>No urgent renovation required</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight mt-2">
+                <strong>The Core Advantage:</strong> This is land-first positioning. The buildings are secondary assets. The three-title compound structure is the primary value driver.
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Previous Marketing Failed -->
+    <section class="alt">
+        <div class="container">
+            <h2>📊 Why Previous Marketing Failed</h2>
+            <p>Understanding the positioning error is critical to understanding this opportunity:</p>
+
+            <div class="comparison">
+                <div class="comparison-box old">
+                    <h4>❌ Old Approach</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem;"><strong>Positioning:</strong> "3 old houses for sale"</p>
+                    <ul>
+                        <li>Buyers focused on building condition</li>
+                        <li>Renovation costs became the conversation</li>
+                        <li>Comparison with ordinary kampung houses</li>
+                        <li>Price seemed high (RM270k-350k per unit)</li>
+                        <li>No compelling buying reason</li>
+                        <li>Market confusion about why buy all three?</li>
+                    </ul>
+                </div>
+
+                <div class="comparison-box new">
+                    <h4>✓ New Approach</h4>
+                    <p style="font-size: 0.95rem; margin-bottom: 1rem;"><strong>Positioning:</strong> "Rare multi-title family compound"</p>
+                    <ul>
+                        <li>Buyers focus on land value</li>
+                        <li>Land appreciation becomes the conversation</li>
+                        <li>Comparison with assembled land opportunities</li>
+                        <li>Price is attractive (RM58-61 per sqft)</li>
+                        <li>Clear buying reasons (legacy, family, development)</li>
+                        <li>Three titles create value, not confusion</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="highlight mt-2">
+                <strong>The Core Insight:</strong> This is not a sales problem. This is a perception problem. The property doesn't need a price cut—it needs a positioning transformation.
+            </div>
+        </div>
+    </section>
+
+    <!-- Property Facts -->
+    <section id="facts">
+        <div class="container">
+            <h2>📋 Property Facts – Confirmed Information</h2>
+            <p>All information in this section is sourced from Hakmilik (property title) documents.</p>
+
+            <h3>Land Titles & Sizes</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Lot Number</th>
+                        <th>Area (sqm)</th>
+                        <th>Area (sqft)</th>
+                        <th>Tenure</th>
+                        <th>Lease Expiry</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Lot 1989</strong></td>
+                        <td>451</td>
+                        <td>4,855</td>
+                        <td>Leasehold</td>
+                        <td>2068</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lot 1990</strong></td>
+                        <td>526</td>
+                        <td>5,662</td>
+                        <td>Leasehold</td>
+                        <td>Verified separately</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Lot 1991</strong></td>
+                        <td>464</td>
+                        <td>4,995</td>
+                        <td>Leasehold</td>
+                        <td>2051</td>
+                    </tr>
+                    <tr style="background: var(--light-bg); font-weight: 600;">
+                        <td><strong>TOTAL</strong></td>
+                        <td><strong>1,441</strong></td>
+                        <td><strong>15,512</strong></td>
+                        <td colspan="2"><strong>Mixed leasehold, 25-42 years remaining</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <h3 style="margin-top: 2rem;">Location & Administrative Details</h3>
+            <div style="background: var(--light-bg); padding: 2rem; border-radius: 4px; margin: 1.5rem 0;">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                    <div>
+                        <p><strong>State:</strong> Kelantan</p>
+                        <p><strong>District:</strong> Tumpat</p>
+                        <p><strong>Mukim:</strong> Wakaf Bharu</p>
+                        <p><strong>Village:</strong> Kampung Kulim</p>
+                    </div>
+                    <div>
+                        <p><strong>GPS:</strong> 6°06'32.9"N 102°11'27.4"E</p>
+                        <p><strong>Land Use:</strong> Residential</p>
+                        <p><strong>Designation:</strong> Malay Reserve</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>Existing Structures</h3>
+            <div class="grid-2">
+                <div class="card">
+                    <h4>Lot 1989 – Residential House</h4>
+                    <p><strong>Type:</strong> Single-storey detached</p>
+                    <p><strong>Bedrooms:</strong> 3</p>
+                    <p><strong>Built-up:</strong> Approximately 1,000-1,100 sqft</p>
+                    <p><strong>Condition:</strong> Good (recently maintained)</p>
+                </div>
+                <div class="card">
+                    <h4>Lot 1990 – Residential House + Hall</h4>
+                    <p><strong>Type:</strong> Single-storey detached + multi-purpose hall</p>
+                    <p><strong>Hall Capacity:</strong> ~80-100 people</p>
+                    <p><strong>Built-up:</strong> Approximately 1,200 sqft (combined)</p>
+                    <p><strong>Condition:</strong> Good</p>
+                </div>
+            </div>
+            <div style="margin-top: 2rem;">
+                <div class="card">
+                    <h4>Lot 1991 – Residential House</h4>
+                    <p><strong>Type:</strong> Single-storey detached</p>
+                    <p><strong>Bedrooms:</strong> 3</p>
+                    <p><strong>Built-up:</strong> Approximately 1,000-1,100 sqft</p>
+                    <p><strong>Condition:</strong> Good</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location -->
+    <section id="location" class="alt">
+        <div class="container">
+            <h2>📍 Location & Accessibility</h2>
+
+            <div class="grid-2">
+                <div>
+                    <h3>Strategic Positioning</h3>
+                    <p>Kampung Kulim sits in Wakaf Bharu, Tumpat – a peri-urban location that balances city proximity with kampung lifestyle.</p>
+
+                    <h4 style="margin-top: 1.5rem; color: var(--secondary);">Key Distances</h4>
+                    <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                        <li><strong>Kota Bharu (town centre):</strong> 15-20 minutes</li>
+                        <li><strong>Wakaf Bharu (town centre):</strong> 5-8 minutes</li>
+                        <li><strong>Sultan Ismail Petra Airport:</strong> 20-25 minutes</li>
+                        <li><strong>Tumpat coastal area:</strong> 10-15 minutes</li>
+                    </ul>
+
+                    <h4 style="margin-top: 1.5rem; color: var(--secondary);">Infrastructure</h4>
+                    <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                        <li>Good access road (paved, well-maintained)</li>
+                        <li>All utilities available (electricity, water, drainage)</li>
+                        <li>Internet connectivity available</li>
+                        <li>Elevated land with good drainage</li>
+                    </ul>
+                </div>
+
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.1234567890!2d102.1909!3d6.1091!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31b249f4a0a0a0a1%3A0xa0a0a0a0a0a0a0a0!2sWakaf%20Bharu%2C%20Tumpat%2C%20Kelantan!5e0!3m2!1sen!2smy!4v1234567890123" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+
+            <div class="highlight mt-2">
+                <strong>Location Strategy:</strong> This is positioned as "close enough to the city (15 minutes to Kota Bharu), far enough for legacy (15,500 sqft of peace)." Peri-urban compound living done right.
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Site Condition -->
+    <section>
+        <div class="container">
+            <h2>📸 Current Site Condition</h2>
+            <p>The following images show the existing structures and compound configuration. Note: <strong>The buildings provide immediate utility. The land is the strategic asset.</strong></p>
+
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="assets/images/lot-1989-residential-house.jpg" alt="Lot 1989 – Residential House">
+                    <div class="gallery-label">Lot 1989 – Residential House</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/lot-1990-house-and-hall.jpg" alt="Lot 1990 – House + Hall">
+                    <div class="gallery-label">Lot 1990 – House + Hall</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/lot-1991-residential-house.jpg" alt="Lot 1991 – Residential House">
+                    <div class="gallery-label">Lot 1991 – Residential House</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/compound-overview-01.jpg" alt="Compound Overview">
+                    <div class="gallery-label">Compound Overview</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/compound-overview-02.jpg" alt="Access Road">
+                    <div class="gallery-label">Access Road</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="assets/images/compound-overview-03.jpg" alt="Vegetation & Privacy">
+                    <div class="gallery-label">Vegetation & Privacy</div>
+                </div>
+            </div>
+
+            <div class="grid-2" style="margin-top: 3rem;">
+                <div>
+                    <h3>Site Characteristics</h3>
+                    <ul style="margin-left: 1.5rem; color: var(--text-muted); line-height: 2;">
+                        <li>Good access road (paved, maintained)</li>
+                        <li>Elevated land (good drainage)</li>
+                        <li>Mature vegetation (privacy, cooling)</li>
+                        <li>Multiple parking areas</li>
+                        <li>Fenced compound (security)</li>
+                        <li>All utilities available</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Building Condition Summary</h3>
+                    <p><strong>Age Status:</strong> Structures are older but structurally sound and functionally adequate.</p>
+                    <p><strong>Maintenance:</strong> Periodic maintenance has been performed. Roof recently renovated.</p>
+                    <p><strong>Usability:</strong> All three houses are ready for immediate occupation if desired.</p>
+                    <p><strong>Strategic Position:</strong> Buildings provide immediate value while the underlying land appreciates over time. No urgent renovation required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideal Buyers -->
+    <section id="buyers" class="alt">
+        <div class="container">
+            <h2>👥 Who Is The Ideal Buyer?</h2>
+            <p>This compound appeals to three distinct buyer profiles, each with different motivations but aligned values around family, stability, and long-term thinking.</p>
+
+            <div class="persona-card">
+                <h3>Profile 1: Kelantan Diaspora</h3>
+                <p><em>Kelantanese living outside Kelantan who maintain emotional connection to home</em></p>
+
+                <div class="persona-trait">
+                    <strong>Location:</strong>
+                    <span>KL, Selangor, Johor, Singapore, or overseas</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Age:</strong>
+                    <span>35-55 years old</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Profile:</strong>
+                    <span>Established professional, already owns property in current city</span>
+                </div>
+
+                <h4 style="margin-top: 1.5rem; color: var(--secondary);">Why They Buy</h4>
+                <p><strong>Emotional:</strong> Maintain family connection to Kelantan  |  <strong>Practical:</strong> Create balik kampung base for extended family  |  <strong>Financial:</strong> Land banking opportunity  |  <strong>Legacy:</strong> Asset for future generations</p>
+
+                <h4 style="color: var(--secondary);">Key Trigger</h4>
+                <p><em>"I want my children to know where we come from. I don't want to lose our family's connection to Kelantan."</em></p>
+
+                <h4 style="color: var(--secondary);">Primary Concern</h4>
+                <p>Whether the investment will appreciate and whether the family will actually use it enough to justify the purchase.</p>
+            </div>
+
+            <div class="persona-card">
+                <h3>Profile 2: Multi-Generation Local Families</h3>
+                <p><em>Families in Kelantan seeking flexible space for multiple generations</em></p>
+
+                <div class="persona-trait">
+                    <strong>Location:</strong>
+                    <span>Wakaf Bharu, Kota Bharu, or nearby Kelantan towns</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Age:</strong>
+                    <span>40-60 years old (parents generation)</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Household:</strong>
+                    <span>Parents + adult children + young families under one roof</span>
+                </div>
+
+                <h4 style="margin-top: 1.5rem; color: var(--secondary);">Why They Buy</h4>
+                <p><strong>Practical:</strong> House parents separately from adult children  |  <strong>Cultural:</strong> Keep extended family close (strong Malay value)  |  <strong>Economic:</strong> More affordable than three separate properties</p>
+
+                <h4 style="color: var(--secondary);">Key Trigger</h4>
+                <p><em>"My parents want their own home, my children want their own space, but we want to stay close to each other. This allows that."</em></p>
+
+                <h4 style="color: var(--secondary);">Primary Concern</h4>
+                <p>Will elderly parents be comfortable? Is the single-storey layout accessible for aging family members?</p>
+            </div>
+
+            <div class="persona-card">
+                <h3>Profile 3: Investors & Small Developers</h3>
+                <p><em>Strategic investors and micro-developers with land vision</em></p>
+
+                <div class="persona-trait">
+                    <strong>Background:</strong>
+                    <span>Malay contractors or micro-developers</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Experience:</strong>
+                    <span>3-5 completed small projects</span>
+                </div>
+                <div class="persona-trait">
+                    <strong>Mindset:</strong>
+                    <span>See land opportunity, not just buildings</span>
+                </div>
+
+                <h4 style="margin-top: 1.5rem; color: var(--secondary);">Why They Buy</h4>
+                <p><strong>Strategic:</strong> Land already assembled (saves negotiation time)  |  <strong>Financial:</strong> Clear development scenarios (3-4 modern units)  |  <strong>Practical:</strong> Predictable buyer pool (Malay Reserve = known restrictions)</p>
+
+                <h4 style="color: var(--secondary);">Key Trigger</h4>
+                <p><em>"This is a land play, not a house play. I can see the end product – the old buildings are just noise."</em></p>
+
+                <h4 style="color: var(--secondary);">Primary Concern</h4>
+                <p>Leasehold tenure, Malay Reserve transfer process, and financing availability for leasehold properties.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Future Possibility Concepts -->
+    <section>
+        <div class="container">
+            <h2>Future Possibility Concepts</h2>
+
+            <div class="concept-notice">
+                <strong>⚠️ Conceptual Visualisations Only</strong><br>
+                The following concepts are designed to help buyers imagine possibilities. These are NOT guaranteed development plans. Any redevelopment or alternative use would require feasibility studies, local authority approvals, and relevant approvals. None of these should be presented as current capabilities.
+            </div>
+
+            <p>This 15,500 sqft compound configuration enables multiple scenarios depending on buyer vision and timeline:</p>
+
+            <div class="concept-grid">
+                <div class="concept-card">
+                    <div class="concept-image">Concept Visualisation Placeholder</div>
+                    <div class="concept-card-content">
+                        <h4>Keluarga Legacy Compound</h4>
+                        <p>Multi-generation family living with each generation in their own house on the same compound. Maintain family bonds while preserving independence.</p>
+                    </div>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-image">Concept Visualisation Placeholder</div>
+                    <div class="concept-card-content">
+                        <h4>Modern Kampung Residence</h4>
+                        <p>Rebuild into a contemporary single-family home while maintaining the kampung character and neighborhood aesthetic.</p>
+                    </div>
+                </div>
+
+                <div class="concept-card">
+                    <div class="concept-image">Concept Visualisation Placeholder</div>
+                    <div class="concept-card-content">
+                        <h4>Private Family Retreat</h4>
+                        <p>Transform into a weekend/holiday retreat with guest accommodation, event space, and family gathering areas.</p>
+                    </div>
+                </div>
+            </div>
+
+            <p style="color: var(--text-muted); font-size: 0.95rem; text-align: center; margin-top: 2rem;">
+                <em>Other concepts exist depending on buyer interests and local authority approvals. The land's flexibility is its greatest asset.</em>
+            </p>
+        </div>
+    </section>
+
+    <!-- Pricing Strategy -->
+    <section id="pricing" class="alt">
+        <div class="container">
+            <h2>💰 Pricing Strategy</h2>
+
+            <p>This property requires premium positioning, which is reflected in the asking price. The price anchors the property as a strategic opportunity, not a distressed sale.</p>
+
+            <div class="pricing-box">
+                <h3 style="margin-top: 0; color: var(--primary);">Recommended Asking Price</h3>
+                <div class="price-display">RM950,000</div>
+                <p class="price-unit">For all 3 titles together (compound sale, not individual units)</p>
+
+                <h3 style="margin-top: 2rem; color: var(--primary);">Price Justification</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                    <li><strong>Price per sqft:</strong> RM58-61 (excellent value for assembled 15,500 sqft compound)</li>
+                    <li><strong>Land size premium:</strong> 6-10x larger than standard kampung houses</li>
+                    <li><strong>Three-title flexibility:</strong> Unique value not available in single-title properties</li>
+                    <li><strong>Immediate utility:</strong> Three functional houses + multi-purpose hall available now</li>
+                    <li><strong>Strategic positioning:</strong> Signals "serious opportunity," not "distressed property"</li>
+                </ul>
+
+                <h3 style="margin-top: 2rem; color: var(--primary);">Expected Negotiation Range</h3>
+                <div style="background: white; padding: 1.5rem; border-left: 4px solid var(--success); border-radius: 0 4px 4px 0; margin-top: 1rem;">
+                    <p><strong>Buyer Counter Offer:</strong> Expected at RM850k-880k</p>
+                    <p><strong>Target Close Range:</strong> RM880k-RM920k</p>
+                    <p><strong>Walk-Away Floor:</strong> RM850k (if buyer is serious and committed)</p>
+                </div>
+
+                <h3 style="margin-top: 2rem; color: var(--primary);">Pricing Flexibility</h3>
+                <p>Rather than lowering price, offer flexibility on terms to close near target:</p>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                    <li><strong>Progressive Payment:</strong> Deposit + balance over 6-12 months</li>
+                    <li><strong>Extended Completion:</strong> Buyer gets 6-12 months to arrange financing</li>
+                    <li><strong>Terms Negotiation:</strong> Creative structures if price is firm</li>
+                </ul>
+            </div>
+
+            <div class="highlight">
+                <strong>Key Strategy:</strong> Sell as bundled compound (all 3 titles together). Bundling preserves premium positioning. Individual sales would invite comparisons with single-title kampung houses and downward price pressure.
+            </div>
+        </div>
+    </section>
+
+    <!-- Marketing Strategy -->
+    <section>
+        <div class="container">
+            <h2>📢 Marketing Strategy</h2>
+
+            <p>This property does not require mass-market advertising. It requires <strong>strategic, targeted marketing</strong> to find the specific buyers who understand and value this opportunity.</p>
+
+            <h3>Core Marketing Principle</h3>
+            <div class="highlight">
+                <strong>Find the right buyer, not the biggest audience.</strong> Quality targeting beats volume marketing. This asset appeals to a specific, identifiable buyer segment – reach them directly.
+            </div>
+
+            <div class="grid-3" style="margin-top: 2rem;">
+                <div class="card">
+                    <h4>Channel 1: Agent Network</h4>
+                    <p>Target diaspora-connected agents in KL, Selangor, Johor with the positioning brief. Brief them on the new narrative (land opportunity, not old houses).</p>
+                    <p style="font-size: 0.9rem; color: var(--text-accent);"><strong>Incentive: 2.5-3% commission for serious buyers</strong></p>
+                </div>
+
+                <div class="card">
+                    <h4>Channel 2: Digital Marketing</h4>
+                    <p>Meta/Facebook ads targeting Kelantan diaspora in KL, Selangor, Johor, Singapore. Use 3-4 ad angles: legacy, family, investment, balik kampung.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-accent);"><strong>Budget: RM5k-10k with lead qualification</strong></p>
+                </div>
+
+                <div class="card">
+                    <h4>Channel 3: Community Networks</h4>
+                    <p>WhatsApp, Facebook groups for Kelantan diaspora. Personal network activation. Word-of-mouth through trusted channels.</p>
+                    <p style="font-size: 0.9rem; color: var(--text-accent);"><strong>Strategy: Organic reach + referrals</strong></p>
+                </div>
+            </div>
+
+            <h3 style="margin-top: 2rem;">Viewing Strategy</h3>
+            <div style="background: var(--light-bg); padding: 2rem; border-radius: 4px;">
+                <p><strong>Group Viewings (not individual appointments):</strong> Schedule on weekends, batch 3-4 serious buyers per session. Provide viewing pack (brochure, site plan, FAQ). Brief agent to tell the story, not just show the building.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>🤝 We Are Looking For A Strategic Selling Partner</h2>
+            <p>Not just a listing agent. A real estate professional who understands positioning, storytelling, buyer psychology, and how to communicate the hidden value in non-standard assets.</p>
+
+            <h3 style="color: white; margin-top: 2rem; margin-bottom: 1rem;">The Ideal Agent Should Understand:</h3>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 1.5rem; text-align: left;">
+                <div>
+                    <p><strong>✓ Land Value Strategy</strong><br>Why the buildings are secondary and the land is primary</p>
+                    <p><strong>✓ Storytelling</strong><br>How to communicate family legacy and compound opportunity</p>
+                </div>
+                <div>
+                    <p><strong>✓ Buyer Psychology</strong><br>Understanding diaspora motivations and family values</p>
+                    <p><strong>✓ Digital Marketing</strong><br>Reaching Kelantan diaspora through social networks</p>
+                </div>
+            </div>
+
+            <p style="margin-top: 2rem; font-size: 1.1rem;">If you are this type of agent, or you know someone who is, <strong>let's have a conversation.</strong></p>
+
+            <button class="hero-cta" style="margin-top: 2rem;" onclick="alert('Contact details:\n\nEmail: siew.samuel@gmail.com\n\nPlease reference: Keluarga Legacy Estate – Wakaf Bharu');">Get In Touch</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>Keluarga Legacy Estate – Wakaf Bharu Opportunity Brief</strong></p>
+        <p>Kampung Kulim, Wakaf Bharu, Tumpat, Kelantan, Malaysia</p>
+        <p style="margin-top: 1rem; font-size: 0.85rem; opacity: 0.8;">This brief is intended for serious real estate professionals and qualified buyers only. Information is accurate to the best of our knowledge as of August 2026. Property details sourced from Hakmilik documents and site inspection.</p>
+    </footer>
+
+</body>
+</html>
