@@ -3,13 +3,386 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wakaf Bharu Legacy Estate</title>
-    <script>
-        window.location.href = 'home.html';
-    </script>
+    <title>Keluarga Legacy Estate – Wakaf Bharu Family Compound</title>
+    <meta name="description" content="Rare 15,512 sqft multi-title family compound in Wakaf Bharu, Kelantan. Premium property with freehold component, existing homes, and flexible development potential.">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        :root { --primary: #3E5E80; --secondary: #B87710; --accent: #B87710; --light-bg: #EFEBE2; --text-dark: #231F18; --text-muted: #7A7264; --border-color: #E7E0D2; --success: #2E7D52; --card-bg: #FFFDF8; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; line-height: 1.6; color: var(--text-dark); background-color: #ffffff; }
+        nav { background: var(--card-bg); padding: 1rem 2rem; position: sticky; top: 0; z-index: 100; border-bottom: 1px solid var(--border-color); }
+        nav .container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav h1 { font-size: 1.1rem; font-weight: 700; color: var(--primary); }
+        nav ul { display: flex; gap: 2rem; list-style: none; }
+        nav a { color: var(--text-muted); text-decoration: none; font-size: 0.9rem; transition: color 0.3s; }
+        nav a:hover { color: var(--primary); }
+        @media (max-width: 768px) { nav h1 { display: none; } nav ul { display: none; } }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        .hero { background: #EFEBE2; color: var(--text-dark); padding: 3rem 2rem; text-align: center; }
+        .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; font-weight: 700; }
+        .hero .subtitle { font-size: 1.1rem; margin-bottom: 1rem; }
+        .hero .location { font-size: 1rem; opacity: 0.9; margin-bottom: 2rem; }
+        .hero-cta { display: inline-block; background: white; color: var(--primary); padding: 0.8rem 2rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; border: 1px solid white; transition: all 0.3s; }
+        .hero-cta:hover { background: #FFFDF8; }
+        @media (max-width: 768px) { .hero { padding: 2rem 1.5rem; } .hero h1 { font-size: 1.6rem; } .hero .subtitle { font-size: 0.95rem; } }
+        section { padding: 4rem 2rem; }
+        section.alt { background: var(--light-bg); }
+        section h2 { font-size: 2rem; margin-bottom: 1rem; color: var(--primary); font-weight: 700; }
+        section h3 { font-size: 1.3rem; margin-top: 1.5rem; margin-bottom: 0.8rem; color: var(--secondary); font-weight: 600; }
+        @media (max-width: 768px) { section { padding: 2.5rem 1.5rem; } section h2 { font-size: 1.5rem; } section h3 { font-size: 1.1rem; } .container { padding: 0 1.5rem; } }
+        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2rem; margin-top: 2rem; }
+        @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; gap: 1.5rem; } }
+        .card { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 4px; padding: 2rem; transition: border-color 0.3s; }
+        .card:hover { border-color: var(--accent); }
+        @media (max-width: 768px) { .card { padding: 1.5rem; } }
+        table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-size: 0.95rem; }
+        table th { background: var(--primary); color: white; padding: 1rem; text-align: left; font-weight: 600; }
+        table td { padding: 1rem; border-bottom: 1px solid var(--border-color); }
+        @media (max-width: 768px) { table { font-size: 0.85rem; } table th, table td { padding: 0.8rem 0.5rem; } }
+        .gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 2rem 0; }
+        .gallery-item { position: relative; overflow: hidden; border-radius: 4px; aspect-ratio: 1; background: #F5F0E8; display: flex; align-items: center; justify-content: center; }
+        .gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: opacity 0.3s; }
+        .gallery-label { position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0,0,0,0.7); color: white; padding: 0.8rem; font-size: 0.85rem; font-weight: 500; }
+        @media (max-width: 768px) { .gallery { grid-template-columns: repeat(2, 1fr); gap: 0.8rem; } }
+        @media (max-width: 480px) { .gallery { grid-template-columns: 1fr; } }
+        .map-container { position: relative; width: 100%; height: 500px; border-radius: 4px; overflow: hidden; margin: 2rem 0; border: 1px solid var(--border-color); }
+        .map-container iframe { width: 100%; height: 100%; border: none; }
+        @media (max-width: 768px) { .map-container { height: 350px; } }
+        .concept-grid-large { display: grid; grid-template-columns: repeat(2, 1fr); gap: 2rem; margin: 2rem 0; }
+        .concept-card-large { background: var(--card-bg); border: 1px solid var(--border-color); border-radius: 4px; overflow: hidden; transition: border-color 0.3s, box-shadow 0.3s; }
+        .concept-card-large:hover { border-color: var(--accent); box-shadow: 0 4px 12px rgba(62, 94, 128, 0.1); }
+        .concept-card-large img { width: 100%; height: 220px; object-fit: cover; }
+        .concept-card-large-content { padding: 1.5rem; }
+        .concept-card-large-content h4 { margin: 0 0 0.5rem 0; font-size: 1.15rem; color: var(--primary); font-weight: 600; }
+        .concept-hook { font-size: 0.95rem; font-style: italic; color: var(--secondary); margin: 0.8rem 0; font-weight: 500; }
+        .concept-description { font-size: 0.9rem; color: var(--text-muted); margin: 0.8rem 0; line-height: 1.5; }
+        @media (max-width: 768px) { .concept-grid-large { grid-template-columns: 1fr; } .concept-card-large img { height: 180px; } }
+        .highlight { background: #F5F0E8; border-left: 4px solid var(--accent); padding: 1.5rem; margin: 2rem 0; border-radius: 0 4px 4px 0; }
+        .highlight strong { color: var(--primary); }
+        .cta-section { background: #FFFDF8; color: var(--text-dark); text-align: center; padding: 3rem 2rem; border-top: 2px solid var(--accent); }
+        .cta-button { display: inline-block; background: var(--primary); color: white; padding: 1rem 2.5rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 1rem; cursor: pointer; border: none; transition: background 0.3s; }
+        .cta-button:hover { background: #2d4a68; }
+        .waze-button { display: inline-block; margin-top: 1rem; background: var(--primary); color: white; padding: 0.7rem 1.5rem; border-radius: 4px; text-decoration: none; font-weight: 600; font-size: 0.95rem; cursor: pointer; transition: background 0.3s; }
+        .waze-button:hover { background: #2d4a68; }
+        @media (max-width: 768px) { .cta-button { display: block; padding: 0.9rem 2rem; } .waze-button { display: block; text-align: center; } }
+        footer { background: #FCF3E0; color: var(--text-muted); padding: 2rem; text-align: center; font-size: 0.85rem; border-top: 1px solid var(--border-color); }
+        @media (max-width: 768px) { footer { padding: 1.5rem 1rem; font-size: 0.8rem; } }
+    </style>
 </head>
 <body>
-    <p>Redirecting to Wakaf Bharu Legacy Estate presentation...</p>
-    <p><a href="OPPORTUNITY_BRIEF.html">Click here if not redirected</a></p>
+
+<nav>
+    <div class="container">
+        <h1>Keluarga Legacy Estate</h1>
+        <ul>
+            <li><a href="#property">Property</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#concepts">Concepts</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#inquiry">Inquiry</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <h1>Keluarga Legacy Estate</h1>
+    <p class="subtitle">Rare Multi-Title Family Compound</p>
+    <p class="location">Wakaf Bharu, Kelantan, Malaysia</p>
+    <p style="font-size: 1rem; font-weight: 300; opacity: 0.95; max-width: 700px; margin: 1.5rem auto;">A rare assembled family estate combining land ownership flexibility, existing homes, and long-term potential.</p>
+    <button class="hero-cta" onclick="document.getElementById('inquiry').scrollIntoView({behavior: 'smooth'});">Schedule Viewing</button>
+</section>
+
+<section id="property">
+    <div class="container">
+        <h2>✨ A Rare Family Estate</h2>
+        <p>Not a typical property listing. A rare assembled family compound with structural advantages most single-title properties cannot match.</p>
+        <div class="grid-2">
+            <div>
+                <h3>What You Get</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                    <li>15,512 sqft of assembled land</li>
+                    <li>3 separate residential titles</li>
+                    <li>1 freehold title (perpetual)</li>
+                    <li>2 long-term leasehold titles</li>
+                    <li>3 functional houses</li>
+                    <li>Multi-purpose hall</li>
+                    <li>All utilities available</li>
+                </ul>
+            </div>
+            <div>
+                <h3>Why It Matters</h3>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted);">
+                    <li>Flexibility single-title properties can't offer</li>
+                    <li>Live immediately, develop later</li>
+                    <li>Perfect for multi-generation living</li>
+                    <li>Multiple future possibilities</li>
+                    <li>Strategic land investment</li>
+                    <li>Freehold component provides security</li>
+                    <li>Growth area with potential appreciation</li>
+                </ul>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>The Advantage:</strong> This estate includes a perpetual tenure (freehold) title, providing a stronger foundation for long-term family ownership than typical leasehold-only compounds.
+        </div>
+    </div>
+</section>
+
+<section id="facts" class="alt">
+    <div class="container">
+        <h2>📋 Property Details</h2>
+        <h3>Land Titles</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Lot</th>
+                    <th>Area (sqft)</th>
+                    <th>Tenure</th>
+                    <th>Expiry</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Lot 1989</strong></td>
+                    <td>4,855</td>
+                    <td>Leasehold (66 years)</td>
+                    <td>24 Nov 2068 (~42 years)</td>
+                </tr>
+                <tr>
+                    <td><strong>Lot 1990</strong></td>
+                    <td>5,662</td>
+                    <td><span style="background: #E8F5E9; padding: 0.3rem 0.6rem; border-radius: 3px; font-weight: 600; color: #2E7D52;">Freehold (Perpetual)</span></td>
+                    <td>No expiry</td>
+                </tr>
+                <tr>
+                    <td><strong>Lot 1991</strong></td>
+                    <td>4,995</td>
+                    <td>Leasehold (66 years)</td>
+                    <td>3 Feb 2051 (~25 years)</td>
+                </tr>
+                <tr style="background: var(--light-bg); font-weight: 600;">
+                    <td><strong>TOTAL</strong></td>
+                    <td><strong>15,512 sqft</strong></td>
+                    <td colspan="2"><strong>1 Freehold + 2 Long-term Leasehold</strong></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3 style="margin-top: 2rem;">Existing Structures</h3>
+        <div class="grid-3">
+            <div class="card">
+                <h4>Lot 1989</h4>
+                <p><strong>Type:</strong> 3-bedroom house</p>
+                <p><strong>Size:</strong> ~1,000-1,100 sqft</p>
+                <p><strong>Condition:</strong> Good</p>
+            </div>
+            <div class="card">
+                <h4>Lot 1990</h4>
+                <p><strong>Type:</strong> House + hall</p>
+                <p><strong>Size:</strong> ~1,200 sqft</p>
+                <p><strong>Hall Capacity:</strong> 80-100 people</p>
+            </div>
+            <div class="card">
+                <h4>Lot 1991</h4>
+                <p><strong>Type:</strong> 3-bedroom house</p>
+                <p><strong>Size:</strong> ~1,000-1,100 sqft</p>
+                <p><strong>Condition:</strong> Good</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="location">
+    <div class="container">
+        <h2>📍 Location & Access</h2>
+        <div style="background: white; padding: 1.5rem; border-radius: 4px; border-left: 4px solid var(--accent); margin-bottom: 2rem;">
+            <p style="margin: 0; font-size: 1rem;"><strong>Address:</strong></p>
+            <p style="margin: 0.5rem 0 0 0; font-size: 1.05rem; color: var(--primary);">Lot 1989-1991, Kampung Kulim, Wakaf Bharu, 17810 Tumpat, Kelantan</p>
+            <p style="margin: 0.8rem 0 0 0; font-size: 0.9rem; color: var(--text-muted);">GPS: 6°06'32.9"N 102°11'27.4"E</p>
+            <a href="https://waze.com/ul/hw30dv2jhm" target="_blank" class="waze-button">📍 Get Directions</a>
+        </div>
+        <div class="grid-2">
+            <div>
+                <h3>Strategic Location</h3>
+                <p>Peri-urban Wakaf Bharu – close enough to the city, far enough for family.</p>
+                <h4 style="margin-top: 1.5rem; color: var(--secondary);">Nearby</h4>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">
+                    <li>Wakaf Bharu: 5-8 min</li>
+                    <li>Kota Bharu: 15-20 min</li>
+                    <li>Airport: 20-25 min</li>
+                    <li>Coast: 10-15 min</li>
+                </ul>
+                <h4 style="margin-top: 1.5rem; color: var(--secondary);">Infrastructure</h4>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">
+                    <li>Paved access road</li>
+                    <li>All utilities available</li>
+                    <li>Good drainage</li>
+                    <li>Internet available</li>
+                </ul>
+            </div>
+            <div class="map-container">
+                <iframe src="https://maps.google.com/maps?width=100%&height=600&hl=en&q=6.1091,102.1909+(Wakaf%20Bharu%20Property)&z=16&ie=UTF8&iwloc=B&output=embed" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="alt">
+    <div class="container">
+        <h2>📸 Property Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="assets/images/lot-1989-residential-house.jpeg" alt="Lot 1989">
+                <div class="gallery-label">Lot 1989</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/lot-1990-house-and-hall.jpeg" alt="Lot 1990">
+                <div class="gallery-label">Lot 1990 + Hall</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/lot-1991-residential-house.jpeg" alt="Lot 1991">
+                <div class="gallery-label">Lot 1991</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/compound-overview-01.JPG" alt="Overview">
+                <div class="gallery-label">Compound</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/compound-overview-02.JPG" alt="Road">
+                <div class="gallery-label">Access</div>
+            </div>
+            <div class="gallery-item">
+                <img src="assets/images/compound-overview-03.JPG" alt="Landscape">
+                <div class="gallery-label">Privacy</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="concepts">
+    <div class="container">
+        <h2>🎯 Future Possibilities</h2>
+        <p>15,512 sqft of flexibility. You decide the future. Here are possibilities:</p>
+        <div class="concept-grid-large">
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/9c1869cc95c7436f69a0f498e1297780b6690804.jpg" alt="Family Headquarters">
+                <div class="concept-card-large-content">
+                    <h4>Family Kampung Headquarters</h4>
+                    <div class="concept-hook">"Your family's permanent Kelantan base."</div>
+                    <div class="concept-description">Permanent home for parents, children, extended relatives. Three separate houses, one gathering hall. A place generations return to.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/6ef2fb1cc0534c252990a6b139ef3c0737201a4e.jpg" alt="Fruit Estate">
+                <div class="concept-card-large-content">
+                    <h4>Durian & Fruit Estate</h4>
+                    <div class="concept-hook">"Your orchard planted for generations."</div>
+                    <div class="concept-description">Premium fruits – durian, rambutan, mangosteen. Land becomes a productive asset and family legacy.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/aea8aac644c02b6550a6e870d03de7c4b447c826.jpg" alt="Wedding Venue">
+                <div class="concept-card-large-content">
+                    <h4>Private Kenduri & Wedding Venue</h4>
+                    <div class="concept-hook">"Celebrate where it matters."</div>
+                    <div class="concept-description">Intimate venue for weddings, aqiqah, private celebrations. Use the hall and outdoor spaces. Subject to local approvals.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4635b3f3c7319976d5e85d30acc81d0fe6c13191.jpg" alt="Raya Village">
+                <div class="concept-card-large-content">
+                    <h4>Ramadan & Raya Family Village</h4>
+                    <div class="concept-hook">"Where the whole family gathers."</div>
+                    <div class="concept-description">Seasonal gathering place. Berbuka pavilion, prayer space, children's lawn. Where memories are made.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/d1aab815144ba1b995647ab52ef95221c7f2cd7f.jpg" alt="Heritage Retreat">
+                <div class="concept-card-large-content">
+                    <h4>Kelantan Heritage Retreat</h4>
+                    <div class="concept-hook">"Modern comfort, unmistakably ours."</div>
+                    <div class="concept-description">Express Kelantan identity through design, food, craft, and hospitality. A retreat that reflects your roots.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/4ae09cd0b2bde1a0badc1706b25e49d90879ce39.jpg" alt="Agro-Lifestyle">
+                <div class="concept-card-large-content">
+                    <h4>Productive Agro-Lifestyle Estate</h4>
+                    <div class="concept-hook">"Live slower. Live better."</div>
+                    <div class="concept-description">Combine fruit trees, herbs, vegetables, fish pond, beehives. Beautiful, productive, and yours.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/48d2f8b38cbe720177e1fac438851f063b86547d.jpg" alt="Private Retreat">
+                <div class="concept-card-large-content">
+                    <h4>Private Family Retreat</h4>
+                    <div class="concept-hook">"Your own private resort."</div>
+                    <div class="concept-description">Weekend escape, wellness location, gathering space. Three guest houses, outdoor dining, private atmosphere.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/bdd05ec99f74fc81fc3fa8ec3390545697be35b6.jpg" alt="Food Brand">
+                <div class="concept-card-large-content">
+                    <h4>Family Food & Agriculture Brand</h4>
+                    <div class="concept-hook">"Build something the family can sell."</div>
+                    <div class="concept-description">Platform for family business. Durian products, traditional snacks, herbs, premium hampers. Land + brand headquarters.</div>
+                </div>
+            </div>
+            <div class="concept-card-large">
+                <img src="https://pplx-res.cloudinary.com/image/upload/pplx_search_images/36bc5947b6a7f8724588d5a529936336ff461cbc.jpg" alt="Quiet Wealth">
+                <div class="concept-card-large-content">
+                    <h4>Quiet Wealth Compound</h4>
+                    <div class="concept-hook">"Real wealth is space, privacy, family."</div>
+                    <div class="concept-description">Discreet multi-generation compound. Privacy, fruit trees, income possibilities. Status without fanfare.</div>
+                </div>
+            </div>
+        </div>
+        <div class="highlight">
+            <strong>Your Choice:</strong> No need to decide everything on day one. Live here, let it appreciate, develop your vision over time. Flexibility is the asset.
+        </div>
+    </div>
+</section>
+
+<section id="pricing" class="alt">
+    <div class="container">
+        <h2>💰 Investment Details</h2>
+        <div style="background: white; padding: 2rem; border-radius: 4px; border-left: 4px solid var(--accent); margin: 2rem 0;">
+            <h3 style="margin-top: 0; color: var(--primary);">Asking Price</h3>
+            <div style="font-size: 2.5rem; font-weight: 700; color: var(--primary); margin: 1rem 0;">RM950,000</div>
+            <p style="color: var(--text-muted); margin: 0; font-size: 0.95rem;">For all 3 titles together. Compound sale, not individual units.</p>
+            <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);">
+                <h4 style="color: var(--secondary); margin-bottom: 1rem;">Why This Price?</h4>
+                <ul style="margin-left: 1.5rem; color: var(--text-muted); font-size: 0.9rem;">
+                    <li><strong>RM61/sqft</strong> for 15,512 sqft (excellent value)</li>
+                    <li><strong>Comparable assembled land:</strong> RM70-85/sqft in this area</li>
+                    <li><strong>Includes 3 existing houses</strong> ready to use immediately</li>
+                    <li><strong>Freehold component</strong> strengthens the asset</li>
+                    <li><strong>Rare opportunity:</strong> Three-title assembly with flexibility</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="inquiry">
+    <div class="container cta-section">
+        <h2>Interested?</h2>
+        <p style="margin-bottom: 1.5rem;">Schedule a viewing or request more information about this rare family estate.</p>
+        <a href="mailto:siew.samuel@gmail.com?subject=Keluarga%20Legacy%20Estate%20-%20Viewing%20Inquiry" class="cta-button">Schedule Viewing</a>
+        <div style="margin-top: 2rem; padding: 1.5rem; background: white; border-radius: 4px; display: inline-block;">
+            <p style="margin: 0; font-size: 0.9rem; color: var(--text-dark);">
+                <strong>Contact:</strong> siew.samuel@gmail.com<br>
+                <strong>Property:</strong> Wakaf Bharu, Kelantan
+            </p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p><strong>Keluarga Legacy Estate</strong></p>
+    <p>Lot 1989, 1990, 1991 Kampung Kulim, Wakaf Bharu, Tumpat, Kelantan</p>
+    <p style="margin-top: 1rem; font-size: 0.8rem; opacity: 0.8;">A rare multi-title family compound. For serious buyers with vision.</p>
+</footer>
+
 </body>
 </html>
